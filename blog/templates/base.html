@@ -1,0 +1,64 @@
+$def with (page)
+
+<html>
+<head>
+    <title>My Blog</title>
+    <style>
+        #menu {
+            width: 200px;
+            float: right;
+        }
+    </style>
+    <style type="text/css">
+div#container{width:1000px;margin-left: 100px;margin-top: 10px}
+div#header {background-color:#99bbbb;}
+div#menu {background-color:#ffff99; height:800px; width:100px; float:left;}
+div#content {background-color:#EEEEEE; height:800px; width:900px; float:left;}
+div#footer {background-color:#99bbbb; clear:both; text-align:center;}
+h1 {margin-bottom:0;}
+h2 {margin-bottom:0; font-size:14px;}
+ul {margin:0;}
+li {list-style:none;}
+</style>
+
+<script type="text/javascript">
+function disp_alert()
+{
+alert("我是警告框！！")
+}
+</script>
+
+</head>
+<body>
+
+<ul id="menu">
+    <li><a href="/">Home</a></li>
+    <li><a href="/new">New Post</a></li>
+</ul>
+
+<div id="container">
+
+<div id="header">
+<h1>Main Title of Web Page</h1>
+</div>
+
+<div id="menu">
+<h2>Menu</h2>
+<ul>
+<input type="button" onclick="disp_alert()" value="显示警告框" />
+</ul>
+</div>
+
+<div id="content">$:page</div>
+
+<div id="footer">wwj</div>
+
+</div>
+
+
+
+
+</body>
+</html>
+
+
