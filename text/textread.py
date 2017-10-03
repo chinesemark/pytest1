@@ -9,8 +9,8 @@ allFileNum = 0
 def printPath(level, path):
     global allFileNum
     '''''
- 打印一个目录下的所有文件夹和文件
- '''
+    打印一个目录下的所有文件夹和文件
+    '''
     # 所有文件夹，第一个字段是次目录的级别
     dirList = []
     # 所有文件
@@ -48,6 +48,4 @@ def printPath(level, path):
 
 
 if __name__ == '__main__':
-    printPath(1, '/home/lizheng')
-    print '总文件数 =', allFileNum
-复制代码
+    printPath(1, 'e:/hb')

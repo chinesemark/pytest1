@@ -1,6 +1,7 @@
+# -*- coding: utf-8 -*-
 __author__ = 'wangweijun'
 __daytime__ = '2015-08-24'
-__module__  = '¶Ô±ÈÎÄ±¾ÄÚÈÝ'
+__module__  = 'ï¿½Ô±ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½'
 import difflib
 import sys
 try:
