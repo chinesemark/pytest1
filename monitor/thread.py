@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 from threading import Thread
-import subprocess
 from Queue import Queue
 import re
 import os
@@ -15,7 +14,7 @@ def pinger(i,q):
     while True:
         ip = q.get()
         if platform.system() == "Linux":
-            cmd = "ping -c 1 %s" % ip
+            cmd = "date & ping -c 1 %s" % ip
 
             outfile = "/dev/null"
         elif platform.system() == "Windows":
@@ -27,15 +26,11 @@ def pinger(i,q):
         f = open("ping.txt",'a+')
         f.write(ping.read())
         f.closed
-
-        #if ret == 0:
-        #    print "%s: is alive" % ip
-        #else:
-        #    print "%s is down" % ip
         q.task_done()
 
 for i in range(num_threads):
-    worker = Thread(target=pinger, args=(i, queue))
+    worker =
+    (target=pinger, args=(i, queue))
     #worker.setDaemon(True)
     worker.start()
 
